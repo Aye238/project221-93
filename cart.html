@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>EcoMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Your Shopping Cart</h1>
+
+        <div id="cart-content">
+            <!-- Cart content will be loaded here by JavaScript -->
+        </div>
+
+      <div id="empty-cart-message" style="display:none; text-align: center; padding: 20px; font-size: 1.2em; color: gray;">
+            <p>Your cart is empty.</p>
+        </div>
+      <div class="cart-actions" style= "margin-top: 20px; text-align: center;">
+            <button id="clear-cart-btn" style="display:none; padding: 10px 20px; margin-top: 20px; cursor: pointer;">Clear Cart</button>
+            <a href="shipping.html" id="checkout-button" class="btn-submit" style="display: none;">Continue to Shipping</a>
+            <a href="home.html" class="btn-submit">Continue Shopping</a>
+        </div>
+
+
+    </section>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

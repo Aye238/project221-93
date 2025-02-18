@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>EcoMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Shipping Information</h1>
+
+        <form action="payment.html" method="POST">
+            <label for="shipping_name">Full Name:</label>
+            <input type="text" id="shipping_name" name="shipping_name" required><br><br>
+
+            <label for="shipping_address">Address:</label>
+            <input type="text" id="shipping_address" name="shipping_address" required><br><br>
+
+            <label for="shipping_city">City:</label>
+            <input type="text" id="shipping_city" name="shipping_city" required><br><br>
+
+            <label for="shipping_state">State/Province:</label>
+            <input type="text" id="shipping_state" name="shipping_state" required><br><br>
+
+            <label for="shipping_zip">Zip/Postal Code:</label>
+            <input type="text" id="shipping_zip" name="shipping_zip" required><br><br>
+
+            <label for="shipping_country">Country:</label>
+            <input type="text" id="shipping_country" name="shipping_country" required><br><br>
+
+            <button type="submit" class="btn-submit">Continue to Payment</button>
+        </form>
+        <a href="cart.html">Back to Cart</a>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>

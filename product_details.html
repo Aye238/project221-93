@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>EcoMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-details">
+        <h2 id="product-name"></h2>
+        <img id="product-image" src="" alt="">
+        <p id="product-description"></p>
+        <p id="product-price"></p>
+        <p id="product-category"></p>
+
+        <!-- Add to Cart Form -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <button id="add-to-cart-btn">Add to Cart</button>
+        <p id="cart-message"></p> <!-- Placeholder for messages -->
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 EcoMart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

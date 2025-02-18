@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>EcoMart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="category-filter">
+        <h3>Filter by Category:</h3>
+        <ul>
+            <li><a href="#all" data-category="">All</a></li>
+            <li><a href="#bags" data-category="Bags">Bags</a></li>
+            <li><a href="#shoes" data-category="Shoes">Shoes</a></li>
+            <li><a href="#kids" data-category="Kids">Kids</a></li>
+            <!-- Add more categories as needed -->
+        </ul>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Eco-Friendly Products</h2>
+        <div class="product-cards" id="product-container">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 EcoMart. All Rights Reserved.</p> <!-- Consistent footer -->
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
