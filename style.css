@@ -1,0 +1,395 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    color: black;
+}
+
+h1, h2, h3 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px; /* Add margin below headings */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    color: coral;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+}
+
+a:hover {
+    color: #1abc9c; /* Hover link color */
+}
+
+header {
+    background-color: burlywood;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* To position dropdown relative to header */
+}
+
+.logo h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.hero {
+    background-image: url('../images/image1.png'); /* Corrected relative path for CSS */
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-shop-now {
+    background-color: #1abc9c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-shop-now:hover {
+    background-color: #16a085;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-section {
+    background-color: burlywood;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.signup-section {
+    background-image: url('../images/image6.png'); /* Corrected relative path for CSS */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-container label { /* Added label styling for better readability */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Darker label color */
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #16a085;
+}
+
+.login-help,
+.signup-help {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.login-help a,
+.signup-help a {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.login-help a:hover,
+.signup-help a:hover {
+    color: #16a085;
+}
+
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #1abc9c;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px; /* Add some margin before footer */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #16a085;
+}
+
+
+/* Styles for cart.html */
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.content th,
+.content td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.content tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content img {
+    display: block;
+    max-width: 80px; /* Limit image width */
+    height: auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.content input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Specific Styles for Continue to Shipping and Continue Shopping Buttons in Cart */
+.content .btn-submit {
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 1rem;  /* Reduced font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.content button.remove-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.content button.remove-btn:hover {
+	background-color: #c0392b;
+}
+/*---------- Added CSS Class ---------*/
+#clear-cart-btn {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+/* Styles for product details page */
+.product-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-details img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto;
+    margin-bottom: 20px;
+}
+.add-to-cart-home{
+    margin-top: 1rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	background-color: #16a085;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.add-to-cart-home:hover{
+    background-color: #1abc9c;
+}
+/* Media Queries for Responsiveness */
+
+/* Mobile-first approach: styles for small screens are defined first */
+/* ... (your existing styles) ... */
+
+/* Styles for tablets (and larger) */
+@media (min-width: 768px) {
+    .product-cards {
+        justify-content: space-between; /* Distribute cards evenly */
+    }
+
+    .card {
+        width: 45%; /* Two cards per row on tablets */
+    }
+     .form-container {
+        max-width: 500px; /* Increase form width on larger screens */
+    }
+    nav ul {
+        gap: 30px; /* More space between navigation items */
+    }
+
+}
+
+/* Styles for large desktops */
+@media (min-width: 1024px) {
+    .card {
+        width: 30%; /* Three cards per row on desktops */
+    }
+        .form-container {
+        max-width: 600px; /* Even wider forms on very large screens */
+    }
+     header {
+        padding: 20px 40px; /* More padding on larger screens */
+    }
+}
+
+/* Style for the OPEN button on the index page */
+.container {
+    position: relative;
+}
